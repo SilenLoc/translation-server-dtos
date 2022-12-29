@@ -28,15 +28,6 @@ pub struct TransResponse {
     pub able_to_translate: bool,
 }
 
-impl TransResponse {
-    pub fn from(content: String, able_to_translate: bool) -> TransResponse {
-        TransResponse {
-            content,
-            able_to_translate,
-        }
-    }
-}
-
 #[derive(Serialize, Deserialize)]
 pub struct TransErr {
     pub content: String,
